@@ -52,12 +52,12 @@ void demo_feed() {
 	if (state == demo) {
 		if (!demo_count) {
 			switch ((rand() >> 8) & 7) {
-				case 1: demo_action = 1; demo_count = 50 + (rand() >> 8) & 63; break;
-				case 2: demo_action = 2; demo_count = 50 + (rand() >> 8) & 63; break;
-				case 3: demo_action = 4; demo_count = 50 + (rand() >> 8) & 63; break;
-				case 4: demo_action = 8; demo_count = 50 + (rand() >> 8) & 63; break;
-				case 5: demo_action =16; demo_count = 50 + (rand() >> 8) & 63; break;
-				case 6: demo_action =32; demo_count = 50 + (rand() >> 8) & 63; break;
+				case 1: demo_action = 1; demo_count = 50 + ((rand() >> 8) & 63); break;
+				case 2: demo_action = 2; demo_count = 50 + ((rand() >> 8) & 63); break;
+				case 3: demo_action = 4; demo_count = 50 + ((rand() >> 8) & 63); break;
+				case 4: demo_action = 8; demo_count = 50 + ((rand() >> 8) & 63); break;
+				case 5: demo_action =16; demo_count = 50 + ((rand() >> 8) & 63); break;
+				case 6: demo_action =32; demo_count = 50 + ((rand() >> 8) & 63); break;
 				case 7: active = (active + 1) % SHAPES_MOVABLE; break;
 			}
 		}
